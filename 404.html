@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Romish Koirala Portfolio</title>
+    <meta name="description" content="404 Page Not Found - Romish Koirala Developer Portfolio." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .card-panel {
+        background-color: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 1.5rem;
+      }
+      .bg-radial-gradient {
+        background-image: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.12) 0%, rgba(6, 182, 212, 0.05) 50%, transparent 80%);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-purple-500 selection:text-white font-sans min-h-screen flex flex-col justify-between relative bg-radial-gradient">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 border-b border-slate-800/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 via-pink-500 to-cyan-400 p-0.5 shadow-md group-hover:scale-105 transition-transform duration-200">
+            <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-black font-mono text-purple-400">
+              RK
+            </div>
+          </div>
+          <span class="font-bold text-base tracking-tight text-white group-hover:text-purple-400 transition-colors duration-200">
+            Romish Koirala
+          </span>
+        </a>
+
+        <a href="index.html" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-150 flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          Return to Portfolio
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Center -->
+    <main class="flex-grow flex items-center justify-center px-4 py-16">
+      <div class="max-w-lg w-full card-panel p-8 sm:p-12 shadow-2xl flex flex-col items-center text-center gap-6 relative">
+        
+        <!-- 404 Visual -->
+        <div class="relative w-32 h-32 flex items-center justify-center">
+          <div class="w-28 h-28 rounded-3xl bg-slate-900 border border-purple-500/30 flex items-center justify-center text-5xl font-black font-mono text-purple-400 shadow-xl">
+            404
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <h1 class="text-3xl font-extrabold text-white tracking-tight">System Path Not Found</h1>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            The page or route you are looking for does not exist in Romish Koirala's portfolio directory.
+          </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-3 w-full pt-2">
+          <a href="index.html" class="w-full sm:flex-1 py-3 px-5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-purple-600/20 transition-all text-center text-sm">
+            Go to Portfolio Home
+          </a>
+          <a href="index.html#terminal" class="w-full sm:flex-1 py-3 px-5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold border border-slate-700 transition-all text-center text-sm font-mono">
+            Launch CLI
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-6">
+      <div class="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500">
+        <p>© 2026 Romish Koirala — BSc CSIT Student @ Hetauda City College.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
